@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e  # exit on error
+set -e
 set -x
 
 # 1. Prepare directories
@@ -23,3 +23,4 @@ python -m train \
 
 
 # just specify model/checkpoints as the result to retrieve
+
