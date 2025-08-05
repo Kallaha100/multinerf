@@ -7,7 +7,10 @@ mkdir -p model/checkpoints
 cd model
 # 3. Download/clone your data
 gdown https://drive.google.com/file/d/1wBh3w32F7aV5bWWXUd6eMBaLB5MCNJyd/view?usp=sharing
-unzip -j nerf.zip -d .
+mv NeRFTrainingData/nerf.zip .
+unzip nerf.zip
+rm nerf.zip
+rm -rf NeRFTrainingData
 #4
 cd ..
 # 5. Run training
@@ -17,4 +20,3 @@ python -m train \
   --gin_bindings="Config.checkpoint_dir = 'model/checkpoints'" \
   --logtostderr
 # just specify model/checkpoints as the result to retrieve
-
