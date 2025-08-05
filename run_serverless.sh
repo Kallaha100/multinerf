@@ -6,9 +6,11 @@ mkdir -p model/checkpoints
 #2 get to model
 cd model
 # 3. Download/clone your data
-gdown https://drive.google.com/file/d/1wBh3w32F7aV5bWWXUd6eMBaLB5MCNJyd/view?usp=sharing
+gdown "https://drive.google.com/uc?id=1wBh3w32F7aV5bWWXUd6eMBaLB5MCNJyd"
+if [ -f "NeRFTrainingData/nerf.zip" ]; then
 mv NeRFTrainingData/nerf.zip .
 unzip nerf.zip
+fi
 rm nerf.zip
 rm -rf NeRFTrainingData
 #4
