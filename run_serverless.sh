@@ -6,7 +6,7 @@ mkdir -p model/checkpoints
 #2 get to model
 cd model
 # 3. Download/clone your data
-gdown "https://drive.google.com/uc?id=1wBh3w32F7aV5bWWXUd6eMBaLB5MCNJyd"
+gdown "https://drive.google.com/file/d/1C1NT2T9TYgKBJulOCo_gVLhbTs73SB8U"
 unzip nerf.zip
 rm nerf.zip
 #4
@@ -18,4 +18,5 @@ python -m train \
   --gin_bindings="Config.checkpoint_dir = 'model/checkpoints'" \
   --logtostderr
 # just specify model/checkpoints as the result to retrieve
+
 
