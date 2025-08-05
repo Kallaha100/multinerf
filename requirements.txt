@@ -2,7 +2,7 @@ numpy==1.23.5
 jax==0.4.14
 jaxlib==0.4.14
 chex==0.1.7
-flax
+flax==0.6.8
 opencv-python
 Pillow
 tensorboard
