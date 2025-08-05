@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-set -x
 
 # 1. Prepare directories
 mkdir -p model/checkpoints
@@ -23,4 +22,5 @@ python -m train \
 
 
 # just specify model/checkpoints as the result to retrieve
+
 
