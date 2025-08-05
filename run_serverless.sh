@@ -6,7 +6,8 @@ mkdir -p model/checkpoints
 #2 get to model
 cd model
 # 3. Download/clone your data
-gdown --folder https://drive.google.com/drive/folders/1WHA3v7_HuXpLCjSxCl0MW-z6S4-GkXxs?usp=sharing
+gdown https://drive.google.com/file/d/1wBh3w32F7aV5bWWXUd6eMBaLB5MCNJyd/view?usp=sharing
+unzip nerf.zip -d model/
 #4
 cd ..
 # 5. Run training
