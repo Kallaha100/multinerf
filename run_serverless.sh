@@ -2,7 +2,7 @@
 set -e
 set -x
 # 1. Prepare directories
-mkdir -p model/checkpoints
+mkdir -p model
 #2 get to model
 cd model
 # 3. Download/clone your data
@@ -19,6 +19,7 @@ python -m train \
   --gin_bindings="Config.max_steps = 5000" \
   --logtostderr | tee /outputs/train.log
 # just specify /output/checkpoints in runpod as the result to retrieve
+
 
 
 
