@@ -1,20 +1,17 @@
 # MultiNeRF: A Code Release for Mip-NeRF 360, Ref-NeRF, and RawNeRF
 
-*This is not an officially supported Google product.*
+This is a personal project to make training nerfs easier with the use of runpod severless.
 
-This repository contains the code release for three CVPR 2022 papers:
-[Mip-NeRF 360](https://jonbarron.info/mipnerf360/),
-[Ref-NeRF](https://dorverbin.github.io/refnerf/), and
-[RawNeRF](https://bmild.github.io/rawnerf/).
-This codebase was written by
-integrating our internal implementations of Ref-NeRF and RawNeRF into our
-mip-NeRF 360 implementation. As such, this codebase should exactly
-reproduce the results shown in mip-NeRF 360, but may differ slightly when
-reproducing Ref-NeRF or RawNeRF results.
+## Installation
+You can ignore the setup section if you do this
 
-This implementation is written in [JAX](https://github.com/google/jax), and
-is a fork of [mip-NeRF](https://github.com/google/mipnerf).
-This is research code, and should be treated accordingly.
+Get the docker image at: https://hub.docker.com/r/kallaha100/multinerf
+
+Fork this repo and change the link from the docker image to your forked repo.
+
+Go inside run_severless.sh and set your own google drive link id.
+
+When the docker image is loaded it will automatically start training with the command inside run_severless.sh.
 
 ## Setup
 
