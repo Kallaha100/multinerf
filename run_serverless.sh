@@ -15,10 +15,11 @@ cd ..
 python -m train \
   --gin_configs=configs/360.gin \
   --gin_bindings="Config.data_dir = 'model'" \
-  --gin_bindings="Config.checkpoint_dir = 'model/checkpoints'" \
+  --gin_bindings="Config.checkpoint_dir = '/outputs/checkpoints'" \
   --gin_bindings="Config.max_steps = 5000" \
-  --logtostderr
-# just specify model/checkpoints as the result to retrieve
+  --logtostderr | tee /outputs/train.log
+# just specify /output/checkpoints in runpod as the result to retrieve
+
 
 
 
