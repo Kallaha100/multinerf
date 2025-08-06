@@ -19,6 +19,7 @@ python -m train \
   --gin_bindings="Config.max_steps = 5000" \
   --logtostderr | tee /outputs/train.log
 # just specify /output/checkpoints in runpod as the result to retrieve
+#This file is an addition to run the training automatically
 
 
 
