@@ -4,7 +4,6 @@ flax==0.8.5
 opencv-python
 Pillow
 tensorboard
-tensorflow
 gin-config
 dm_pix
 rawpy
